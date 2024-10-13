@@ -1,6 +1,6 @@
 streamlit
 google.generativeai
-eSpeak
+eSpeak-ng
 gtts
 pyttsx3
 
