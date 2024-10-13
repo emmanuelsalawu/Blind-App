@@ -86,8 +86,6 @@ if x:
     st.write(responses[0])
     engine = pyttsx3.init()
 
-    rate = engine.getProperty('rate')
-    engine.setProperty('rate', 130)
 
     engine.say(responses[0])
     engine.runAndWait()
