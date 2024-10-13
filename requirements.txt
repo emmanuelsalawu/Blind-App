@@ -1,6 +1,6 @@
 streamlit
 google.generativeai
-gtts
+gtts==2.4.0
 pyttsx3
 
 
