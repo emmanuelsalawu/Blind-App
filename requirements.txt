@@ -2,5 +2,5 @@ streamlit
 google.generativeai
 google.generativeai.types
 gtts
-pyttsx3
+
 
