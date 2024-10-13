@@ -1,6 +1,7 @@
 import streamlit as st
 import google.generativeai as genai
 import os
+import google.generativeai as genai
 from google.generativeai.types import HarmCategory, HarmBlockThreshold
 from gtts import gTTS
 import pyttsx3
@@ -87,16 +88,6 @@ if x:
 
     rate = engine.getProperty('rate')
     engine.setProperty('rate', 130)
-    
+
     engine.say(responses[0])
     engine.runAndWait()
-
-    
-    
-    
-    
-    
-
-
-
-
