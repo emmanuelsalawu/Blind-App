@@ -2,5 +2,6 @@ streamlit
 google.generativeai
 gtts==2.4.0
 pyttsx3
+comtypes.client
 
 
