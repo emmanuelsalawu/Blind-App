@@ -1,5 +1,4 @@
 import streamlit as st
-import google.generativeai as genai
 import os
 import google.generativeai as genai
 from google.generativeai.types import HarmCategory, HarmBlockThreshold
