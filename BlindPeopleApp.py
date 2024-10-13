@@ -7,7 +7,6 @@ from gtts import gTTS
 import pyttsx3
 
 
-engine = pyttsx3.init()
 
 def upload_to_gemini(path, mime_type=None):
   """Uploads the given file to Gemini.
@@ -85,10 +84,11 @@ if x:
     responses = generate_multiple_llm_responses(prompt)
     
     st.write(responses[0])
-    
+    engine = pyttsx3.init()
+
     rate = engine.getProperty('rate')
     engine.setProperty('rate', 130)
-
+    
     engine.say(responses[0])
     engine.runAndWait()
 
