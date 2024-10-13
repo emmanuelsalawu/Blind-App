@@ -5,6 +5,7 @@ import google.generativeai as genai
 from google.generativeai.types import HarmCategory, HarmBlockThreshold
 from gtts import gTTS
 import pyttsx3
+import comtypes.client
 
 
 
@@ -84,7 +85,7 @@ if x:
     responses = generate_multiple_llm_responses(prompt)
     
     st.write(responses[0])
-    engine = pyttsx3.init()
+    engine = pyttsx3.init('sapi5')
 
     rate = engine.getProperty('rate')
     engine.setProperty('rate', 130)
