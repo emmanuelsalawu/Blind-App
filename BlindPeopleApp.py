@@ -86,7 +86,3 @@ if x:
     st.write(responses[0])
     esng = ESpeakNG()
     esng.say(responses[0])
-    engine.setProperty('rate', 130)
-
-    engine.say(responses[0])
-    engine.runAndWait()
