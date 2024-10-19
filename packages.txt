@@ -1,1 +1,1 @@
-espeak-ng==1.49.2
+espeak-ng==1.51
