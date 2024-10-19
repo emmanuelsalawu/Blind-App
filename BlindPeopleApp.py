@@ -83,6 +83,10 @@ if x:
 
     responses = generate_multiple_llm_responses(prompt)
     
-    st.write(responses[0])
-    esng = ESpeakNG()
-    esng.say(responses[0])
+    engine = pyttsx3.init()
+
+    engine.say(responses[0])
+
+    engine.runAndWait()
+
+    
