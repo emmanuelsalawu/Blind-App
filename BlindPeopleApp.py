@@ -86,7 +86,6 @@ if x:
     engine = pyttsx3.init()
 
     engine.say(responses[0])
-
     engine.runAndWait()
 
     
