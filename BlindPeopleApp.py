@@ -82,7 +82,7 @@ if x:
     prompt.append(sample_image_file)
 
     responses = generate_multiple_llm_responses(prompt)
-    
+    st.write(responses[0])
     engine = pyttsx3.init()
 
     engine.say(responses[0])
