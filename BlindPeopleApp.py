@@ -4,6 +4,7 @@ import google.generativeai as genai
 from google.generativeai.types import HarmCategory, HarmBlockThreshold
 import pyttsx3
 import gtts as gTTS
+from espeak-ng import ESpeakNG
 
 
 
@@ -83,9 +84,8 @@ if x:
     responses = generate_multiple_llm_responses(prompt)
     
     st.write(responses[0])
-    engine = pyttsx3.init()
-
-    rate = engine.getProperty('rate')
+    esng = ESpeakNG()
+    esng.say(responses[0])
     engine.setProperty('rate', 130)
 
     engine.say(responses[0])
