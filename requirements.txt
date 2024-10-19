@@ -2,4 +2,4 @@ streamlit
 google.generativeai
 pyttsx3==2.71
 gtts
-py-espeak-ng=0.1.8
+py-espeak-ng==0.1.8
