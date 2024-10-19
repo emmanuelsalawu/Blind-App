@@ -72,7 +72,7 @@ def generate_multiple_llm_responses(
 sample_prompt = "Describe the content of the attached image is very simple sentences."
 prompt = [sample_prompt]
 
-st.Title("Blind People Assist")
+st.title("Blind People Assist")
 
 x = st.camera_input("Take a picture, and let me explain")
 if x:
