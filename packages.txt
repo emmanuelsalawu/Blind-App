@@ -1,2 +1,1 @@
-pcaudiolib
-apt-get install espeak-ng
+espeak-ng
