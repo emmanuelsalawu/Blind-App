@@ -1,1 +1,1 @@
-espeak-ng==1.51
+espeak-ng
