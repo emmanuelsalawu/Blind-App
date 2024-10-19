@@ -1,3 +1,2 @@
 pcaudiolib
-brew list > file
-cat file | xargs brew install espeak-ng
+apt-get install espeak-ng
