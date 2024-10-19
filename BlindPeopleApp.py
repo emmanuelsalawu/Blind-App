@@ -4,7 +4,7 @@ import google.generativeai as genai
 from google.generativeai.types import HarmCategory, HarmBlockThreshold
 import pyttsx3
 import gtts as gTTS
-from espeak-ng import ESpeakNG
+from espeakng import ESpeakNG
 
 
 
