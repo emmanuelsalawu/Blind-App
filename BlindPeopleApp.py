@@ -2,10 +2,7 @@ import streamlit as st
 import os
 import google.generativeai as genai
 from google.generativeai.types import HarmCategory, HarmBlockThreshold
-#import pyttsx3
 from gtts import gTTS
-# from espeakng import ESpeakNG
-# import gemini
 
 
 
@@ -85,14 +82,8 @@ if x:
 
     responses = generate_multiple_llm_responses(prompt)
     st.write(responses[0])
-    #engine = pyttsx3.init()
-    #engine.say(responses[0])
-    #engine.runAndWait()
 
     audio_file_name = "audio.mp3"
     tts = gTTS(responses[0])
     tts.save(audio_file_name)
     st.audio(audio_file_name, format="audio/mpeg", loop=True)
-
-
-    
