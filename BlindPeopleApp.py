@@ -3,7 +3,7 @@ import os
 import google.generativeai as genai
 from google.generativeai.types import HarmCategory, HarmBlockThreshold
 #import pyttsx3
-import gtts as gTTS
+from gtts import gTTS
 # from espeakng import ESpeakNG
 # import gemini
 
